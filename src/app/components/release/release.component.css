@@ -1,0 +1,61 @@
+li {
+  float: left;
+  padding-right: 15px;
+  clear: right;
+}
+
+li:first-child {
+  list-style-type: none;
+}
+
+.release-container {
+  clear: both;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* #F2F2F2 */
+
+background: #F2F2F2;
+border-radius: 4px;
+}
+
+.release-title {
+  display: block;
+  height: 20px;
+  left: 20px;
+  right: 0px;
+  bottom: 70px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+
+}
+
+.artist-name {
+height: 20px;
+left: 20px;
+right: 0px;
+bottom: 50px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+color: #000000;
+
+}
+
+.release-formats {
+  margin-top: 10px;
+}

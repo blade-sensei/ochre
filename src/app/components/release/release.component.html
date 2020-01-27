@@ -1,0 +1,14 @@
+<div class="release-container">
+  <div class="release-thumbnail">
+    <img src="{{ release.imageUrl}} " alt="">
+  </div>
+  <div class="relase-details">
+    <span class="release-title"> {{ release.title }} </span>
+    <span class="artist-name"> {{ release.artist.name }} </span>
+    <div class="release-formats">
+      <li *ngFor="let format of release.formats">
+        {{ format.code }}
+      </li>
+    </div>
+  </div>
+</div>
