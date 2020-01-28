@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "ochra-1",
+    "default": "ochra-1"
+  }
+}
