@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ReleaseService } from "src/app/services/release/release.service";
-import { Release } from 'src/app/models/Release';
+import { Release } from "src/app/models/Release";
 
 @Component({
   selector: "app-releases-list",

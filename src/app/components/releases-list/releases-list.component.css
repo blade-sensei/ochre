@@ -1,3 +1,7 @@
-.release-component {
-  display: inline-block;
+.release-list-container {
+  margin: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+
 }
