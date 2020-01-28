@@ -14,7 +14,7 @@ import { catchError, map } from 'rxjs/operators';
 export class AuthenticationInterceptorService {
 
   constructor(private oauth: OauthService) { }
-
+  // TODO handle missing token and expired
    intercept(
     req: HttpRequest<any>,
     next: HttpHandler,
@@ -25,7 +25,6 @@ export class AuthenticationInterceptorService {
 
   handleRefresh(request, next) {
     return this.oauth.getToken().subscribe(token => {
-      console.log(token);
       return next;
     }, err => console.log(err));
   }
@@ -34,8 +33,4 @@ export class AuthenticationInterceptorService {
     const token = localStorage.getItem('ochra-token');
     return token;
   }
-
-
-
-
 }
