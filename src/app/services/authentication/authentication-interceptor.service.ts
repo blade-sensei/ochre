@@ -19,16 +19,18 @@ export class AuthenticationInterceptorService {
     req: HttpRequest<any>,
     next: HttpHandler,
   ): Observable<HttpEvent<any>> {
-    const token = localStorage.getItem('ochra-token');
     return next.handle(req);
   }
 
   handleRefresh(request, next) {
     return this.oauth.getToken().subscribe(token => {
+      // TODO call oauth service token then pass next.handle and set localstorage
+
       return next;
     }, err => console.log(err));
   }
 
+  // TODO: create functions to check missed and expired token
   isTokenInClientBrowser() {
     const token = localStorage.getItem('ochra-token');
     return token;
