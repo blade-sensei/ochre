@@ -1,7 +1,10 @@
+import { Format } from './format';
+import { Artist } from './artist';
+
 export class Release {
   title: string;
-  artist: {};
-  formats: object[];
+  artist: Artist;
+  formats: Format[];
   imageUrl: string;
   id: number;
 
